@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelGenerator : MonoBehaviour
 {
@@ -9,7 +10,6 @@ public class LevelGenerator : MonoBehaviour
     public Vector2 offset;
     public GameObject brickPrefab;
     public Gradient gradient;
-    // Start is called before the first frame update
 
     private void Awake()
     {
@@ -33,4 +33,17 @@ public class LevelGenerator : MonoBehaviour
     {
         
     }
+
+    void Test()
+    {
+        Debug.Log("Test");
+    }
+
+    void Restart()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    
 }
