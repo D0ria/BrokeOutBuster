@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BallMovement : MonoBehaviour
+public class BounceBall : MonoBehaviour
 {
     public float minY = -5.5f;
     public float maxVelocity = 15f;
@@ -26,7 +26,13 @@ public class BallMovement : MonoBehaviour
         if (rb.velocity.magnitude > maxVelocity)
         {
             rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxVelocity);
+        } 
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Brick")) {
+            Destroy(collision.gameObject);
         }
-        
     }
 }
