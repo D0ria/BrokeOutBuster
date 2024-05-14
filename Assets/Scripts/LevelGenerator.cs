@@ -34,12 +34,8 @@ public class LevelGenerator : MonoBehaviour
         
     }
 
-    void Test()
-    {
-        Debug.Log("Test");
-    }
 
-    void Restart()
+    public void Restart()
     {
         Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

@@ -18,10 +18,14 @@ public class BounceBall : MonoBehaviour
     public GameObject[] livesImage;
 
     public GameObject gameOverPanel;
+    public GameObject youWinPanel;
+    int brickCount;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        brickCount = FindObjectOfType<LevelGenerator>().transform.childCount;
+        rb.velocity = Vector2.down*10f;
     }
 
     // Update is called once per frame
@@ -36,7 +40,7 @@ public class BounceBall : MonoBehaviour
             else
             {
                 transform.position = Vector3.zero;
-                rb.velocity = Vector3.zero;
+                rb.velocity = Vector2.down * 10f;
                 lives--;
                 livesImage[lives].SetActive(false);
             }
@@ -54,6 +58,12 @@ public class BounceBall : MonoBehaviour
             Destroy(collision.gameObject);
             score+=10;
             scoreText.text = score.ToString("00000");
+            brickCount--;
+            if (brickCount <= 0)
+            {
+                youWinPanel.SetActive(true);
+                Time.timeScale = 0;
+            }
         }
     }
 
