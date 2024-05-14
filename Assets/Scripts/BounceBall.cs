@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 
 public class BounceBall : MonoBehaviour
 {
@@ -26,6 +28,12 @@ public class BounceBall : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         brickCount = FindObjectOfType<LevelGenerator>().transform.childCount;
         rb.velocity = Vector2.down*10f;
+    }
+
+    AudioManager audioManager;
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     // Update is called once per frame
@@ -56,6 +64,7 @@ public class BounceBall : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Brick")) {
             Destroy(collision.gameObject);
+            audioManager.PlaySfx(audioManager.pam);
             score+=10;
             scoreText.text = score.ToString("00000");
             brickCount--;
