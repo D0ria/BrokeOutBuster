@@ -43,6 +43,7 @@ public class BounceBall : MonoBehaviour
         {
             if (lives <= 0)
             {
+                audioManager.PlaySfx(audioManager.menu);
                 GameOver();
             }
             else
@@ -81,5 +82,6 @@ public class BounceBall : MonoBehaviour
         gameOverPanel.SetActive(true);
         Time.timeScale = 0;
         Destroy(gameObject);
+        audioManager.PlaySfx(audioManager.menu);
     }
 }

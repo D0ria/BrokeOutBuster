@@ -7,6 +7,7 @@ public class AudioManager : MonoBehaviour
 
     public AudioClip background;
     public AudioClip pam;
+    public AudioClip menu;
 
     private void Start()
     {
