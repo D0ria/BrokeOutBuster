@@ -56,6 +56,8 @@ AudioMixerController:
   m_ExposedParameters:
   - guid: b12a1dd5dd9c3b743b00b057f149e773
     name: music
+  - guid: 5b776bc80d49e5b40813c87de5f4ceb3
+    name: SFX
   m_AudioMixerGroupViews:
   - guids:
     - 6cdd767204e7836479ec6f09dda3b5e1
@@ -109,8 +111,9 @@ AudioMixerSnapshotController:
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 53b9acd8461164144b6de13411ca453a
   m_FloatValues:
-    b12a1dd5dd9c3b743b00b057f149e773: -1.7612991
-    5b776bc80d49e5b40813c87de5f4ceb3: -10.13915
+    b12a1dd5dd9c3b743b00b057f149e773: 0.038230896
+    0f87fa28a3405bf4785c9ccf93c33f7d: 0.028544791
+    5b776bc80d49e5b40813c87de5f4ceb3: 0.038230564
   m_TransitionOverrides: {}
 --- !u!244 &7992331310486958354
 AudioMixerEffectController:
