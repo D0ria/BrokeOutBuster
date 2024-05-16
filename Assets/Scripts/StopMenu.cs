@@ -15,8 +15,6 @@ public class StopMenu : MonoBehaviour
        // Debug.Log(PlayerMovement.instance);
         if (PlayerMovement.instance.inputActions.Player.Menu.IsPressed())
         {
-            
-            
                 Pause();
         }
     }
