@@ -20,7 +20,6 @@ public class BounceBall : MonoBehaviour
     public GameObject[] livesImage;
 
     public GameObject gameOverPanel;
-    public GameObject youWinPanel;
     int brickCount;
     // Start is called before the first frame update
     void Start()
@@ -72,7 +71,7 @@ public class BounceBall : MonoBehaviour
             brickCount--;
             if (brickCount <= 0)
             {
-                youWinPanel.SetActive(true);
+                SceneManager.LoadScene("Credits");
                 Time.timeScale = 0;
             }
         }
