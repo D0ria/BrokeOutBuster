@@ -50,8 +50,8 @@ public class BounceBall : MonoBehaviour
             {
                 transform.position = Vector3.zero;
                 rb.velocity = Vector2.down * 10f;
-                lives--;
                 audioManager.PlaySfx(audioManager.boom);
+                lives--;
                 livesImage[lives].SetActive(false);
             }
         }
