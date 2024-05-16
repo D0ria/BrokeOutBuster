@@ -1,37 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public string SceneSample;
+    private bool isOpen = false;
     // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
 
     public void StartGame()
     {
         SceneManager.LoadScene("SampleScene");
     }
 
-    public void OpenOptions()
-    {
-
-    }
-
-    public void CloseOptions()
-    {
-
-    }
 
     public void QuitGame()
     {
