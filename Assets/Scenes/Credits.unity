@@ -260,8 +260,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.345699, y: -1158}
-  m_SizeDelta: {x: 162.3774, y: 1747.9778}
+  m_AnchoredPosition: {x: 4.345699, y: -1819.458}
+  m_SizeDelta: {x: 162.3774, y: 2504.8938}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1005880341
 MonoBehaviour:
@@ -285,18 +285,20 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Message du cr\xE9ateur : \n\nToutes mes f\xE9licitations, vous avez termin\xE9
     le jeu. Nous esp\xE9rons que vous avez bien gal\xE9r\xE9 avant d'arriver \xE0
-    ce point \n\nJe sais que le design peut-\xEAtre comment dire... D\xE9gueu mais
-    peu importe je voulais juste que ce soit un minimum amusant et potable. J'esp\xE8re
-    que \xE7a l'a \xE9t\xE9. Les sons \xE9taient d'une qualit\xE9s apr\xE8s tout!\n\nPassons
-    aux cr\xE9dits si vous le voulez bien.\n\nCr\xE9ateur : Doria \nD\xE9bugueurs
-    en chef : Ibrahim & Baptiste\nB\xEAta Testeur : Victimes\n\n\nRemerciements\n\nUn
+    ce point \n\n\n\n\n\n\n\nJe sais que le design peut-\xEAtre comment dire... D\xE9gueu
+    mais peu importe je voulais juste que ce soit un minimum amusant et potable.
+    J'esp\xE8re que \xE7a l'a \xE9t\xE9. Les sons \xE9taient d'une qualit\xE9s apr\xE8s
+    tout!\n\n\n\n\n\n\n\nPassons aux cr\xE9dits si vous le voulez bien.\n\nCr\xE9ateur
+    : Doria \nDesigner : Doria\nD\xE9bugueurs en chef : Ibrahim & Baptiste\nB\xEAta
+    Testeur : Victimes\nMusique : Youtube \nVid\xE9o : Youtube\n\n\n\n\n\n\nRemerciements\n\nUn
     grand merci \xE0 Internet, Youtube et ses pr\xE9cieux tutos. Merci \xE0 mes b\xEAtas
     testeurs qui ont \xE9t\xE9 victime de crises \xE9pileptiques pour r\xE9pondre
     \xE0 mes questions. Merci \xE0 ma limonade qui ne s'est pas renvers\xE9 sur mon
     clavier. Merci au monde entier de ne pas conna\xEEtre ce jeu, seuls les cr\xE9dits
-    valent le coup en vrai.\n\nJ'esp\xE8re \xEAtre arriv\xE9 \xE0 la fin de cette
-    magnifique vid\xE9o parce que j'ai plus d'inspirations pour les cr\xE9dits l\xE0.\n\nAh
-    si ! \n\nEn vrai \xE7a m\xE9rite au moins un petit 15 l\xE0 non ? "
+    valent le coup en vrai.\n\n\n\n\n\n\n\nJ'esp\xE8re \xEAtre arriv\xE9 \xE0 la
+    fin de cette magnifique vid\xE9o parce que j'ai plus d'inspirations pour les
+    cr\xE9dits l\xE0.\n\n\n\n\n\n\n\nAh si ! \n\nEn vrai \xE7a m\xE9rite au moins
+    un petit 15 l\xE0 non ? "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -577,7 +579,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -278}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1755664615
@@ -716,10 +718,10 @@ RectTransform:
   - {fileID: 1755664614}
   m_Father: {fileID: 395390402}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -331.22012, y: -0.000005722}
-  m_SizeDelta: {x: 227.56, y: 556}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 196.5304, y: -540}
+  m_SizeDelta: {x: 393.06067, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1906079518
 MonoBehaviour:
