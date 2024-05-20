@@ -3,18 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Video;
-using UnityEngine.UI;
 using System;
 
 public class VideoPlayer : MonoBehaviour
 {
+    // Start is called before the first frame update
     public VideoPlayer videoPlayer;
-    internal Action<UnityEngine.Video.VideoPlayer> loopPointReached;
 
     void Start()
     {
         videoPlayer.loopPointReached += OnVideoEnd;
-
     }
 
     // Update is called once per frame
@@ -28,6 +26,4 @@ public class VideoPlayer : MonoBehaviour
         // Charger la scène du menu principal
         SceneManager.LoadScene("Menu");
     }
-
-
 }
