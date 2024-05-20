@@ -1,25 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Video;
+using UnityEngine.UI;
 
 public class IntroVideoController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public VideoPlayer videoPlayer;
+    public VideoPlayer videoPlayer; // Le VideoPlayer de la cinématique
+
     void Start()
     {
+        // Ajout de l'événement pour détecter la fin de la vidéo
         videoPlayer.loopPointReached += OnVideoEnd;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    void OnVideoEnd(UnityEngine.Video.VideoPlayer vp)
+    // Méthode appelée lorsque la vidéo se termine
+    void OnVideoEnd(VideoPlayer vp)
     {
         // Charger la scène du menu principal
         SceneManager.LoadScene("Menu");
