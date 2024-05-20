@@ -4,16 +4,17 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Video;
 using UnityEngine.UI;
+using System;
 
-public class IntroVideoController : MonoBehaviour
+public class VideoPlayer : MonoBehaviour
 {
-    // Start is called before the first frame update
     public VideoPlayer videoPlayer;
-    public Button skipButton;
+    internal Action<UnityEngine.Video.VideoPlayer> loopPointReached;
+
     void Start()
     {
         videoPlayer.loopPointReached += OnVideoEnd;
-        skipButton.onClick.AddListener(SkipVideo);
+
     }
 
     // Update is called once per frame
@@ -28,9 +29,5 @@ public class IntroVideoController : MonoBehaviour
         SceneManager.LoadScene("Menu");
     }
 
-    public void SkipVideo()
-    {
-        videoPlayer.Stop();
-        SceneManager.LoadScene("Menu");
-    }
+
 }
